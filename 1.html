@@ -4,10 +4,25 @@
 <title>웹 공부하기</title>
 <meta charset="utf-8"> 
 <link rel="stylesheet" href="style.css">
+<style>
+
+</style>
 </head>
 
 <body>
-    <input type="button" value="버튼">
+
+    <input type="button" id="dark" value="다크모드" onclick="
+    if(document.querySelector('#dark').value === '다크모드'){
+        document.querySelector('body').style.backgroundColor = 'black';
+        document.querySelector('body').style.color = 'white';
+        document.querySelector('#dark').value = '다크모드 끄기';
+    } else {
+        document.querySelector('body').style.backgroundColor = 'white';
+        document.querySelector('body').style.color = 'black';
+        document.querySelector('#dark').value = '다크모드';
+    }
+    ">
+
     <h1><A href="index.html">HOME</A></h1>
     <div id="grid">
         
