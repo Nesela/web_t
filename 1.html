@@ -16,11 +16,28 @@
         document.querySelector('body').style.backgroundColor = 'black';
         document.querySelector('body').style.color = 'white';
         document.querySelector('#dark').value = '다크모드 끄기';
+
+    var alist = document.querySelectorAll('a');
+    let i = 0 ;
+    while (i < alist.length) {
+    alist[i].style.color = 'tomato';
+        i = i + 1;
+    }
+
     } else {
         document.querySelector('body').style.backgroundColor = 'white';
         document.querySelector('body').style.color = 'black';
         document.querySelector('#dark').value = '다크모드';
+
+        var alist = document.querySelectorAll('a');
+    let i = 0 ;
+    while (i < alist.length) {
+    alist[i].style.color = 'blue';
+        i = i + 1;
     }
+    }
+
+    
     ">
 
     <h1><A href="index.html">HOME</A></h1>
@@ -48,4 +65,3 @@
 </div>
 </body>
 </html>
-
