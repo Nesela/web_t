@@ -2,40 +2,46 @@
 <html>              
 <head>        
     <style>
-        ul{
-            list-style: none;
-        }
-        .mm > ul:hover{
-            color: tomato;
-        }
-        ul:hover > li{
-            color: tomato;
-            display: block;
-        }
-        li{
-            display: none;
-        }
-        
-        
-
+    .mm{
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        cursor: pointer;
+        width: 100px;
+    }
+    .sm{
+        display: none;
+        position: absolute;
+        width: 100%;    
+    }
+    .mm:hover .sm{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+  
     </style>
     <meta charset="utf-8">
     <title></title>
 </head>
 <body>
     <h1>메인메뉴 호버 테스트</h1>
-    <nav class="mm">main menu
-    <ul>  여긴이름 못넣나
-        <li>테스트 1</li>
-        <li>테스트 2</li>
-        <li>테스트 3</li>
-    </ul>
-    <ul>
-        <li>테스트 1</li>
-        <li>테스트 2</li>
-        <li>테스트 3</li>
-    </ul>
-    </nav>
+    <div class="mm">
+        <span>1</span>
+            <div class="sm">
+                <a>테스트 1</a>
+                <a>테스트 2</a>
+                <a>테스트 3</a>
+            </div>
+    </div>
+    <div class="mm">
+        <span>2</span>
+            <div class="sm">
+                <a>테스트 1</a>
+                <a>테스트 2</a>
+                <a>테스트 3</a>
+            </div>
+    </div>
 
 </body>
 </html>
